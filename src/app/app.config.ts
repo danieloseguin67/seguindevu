@@ -18,6 +18,6 @@ export const appConfig: ApplicationConfig = {
         defaultLanguage: 'en',
       })
     ),
-    ...provideTranslateHttpLoader({ prefix: '/i18n/', suffix: '.json' }),
+    ...provideTranslateHttpLoader({ prefix: 'i18n/', suffix: '.json' }),
   ],
 };

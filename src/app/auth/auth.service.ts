@@ -20,7 +20,7 @@ export class AuthService {
   constructor(private http: HttpClient, private router: Router) {}
 
   login(username: string, password: string): Observable<boolean> {
-    return this.http.get<User[]>('/users.json').pipe(
+    return this.http.get<User[]>('users.json').pipe(
       timeout({ first: this.REQUEST_TIMEOUT_MS }),
       switchMap((users) => {
         const user = users.find(

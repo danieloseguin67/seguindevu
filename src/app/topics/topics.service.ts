@@ -85,7 +85,7 @@ export class TopicsService {
       }
     }
 
-    return this.http.get<unknown>('/topics.json').pipe(
+    return this.http.get<unknown>('topics.json').pipe(
       timeout({ first: this.REQUEST_TIMEOUT_MS }),
       map((raw) => this.normalizeTopics(raw) ?? []),
       catchError(() => of([]))
