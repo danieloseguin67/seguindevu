@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "category": "Software",
+    "title": "MyAccounting User Guide",
+    "description": "Comprehensive accounting user guide covering core accounting concepts and workflows.",
+    "descriptionFr": "Guide utilisateur comptable complet couvrant les concepts fondamentaux et les flux de travail de la comptabilité.",
+    "document": "topics/MyAccountingUserGuide.pdf",
+    "documentType": "pdf",
+    "articles": []
+  },
+  {
+    "id": 2,
+    "category": "Software",
+    "title": "MyAccounting IT Functional Analysis",
+    "description": "Functional IT analysis document detailing the features and functionalities of MyAccounting software.",
+    "descriptionFr": "Document d'analyse fonctionnelle informatique détaillant les fonctionnalités du logiciel MyAccounting.",
+    "document": "topics/MyAccountFunctionalAnalysis.pdf",
+    "documentType": "pdf",
+    "articles": []
+  },
+  {
+    "id": 3,
+    "category": "Software",
+    "title": "MyAccounting integration with Google",
+    "description": "Step-by-step guide on how to set up and integrate MyAccounting with Google services for enhanced functionality.",
+    "descriptionFr": "Guide étape par étape pour configurer et intégrer MyAccounting avec les services Google afin d'améliorer les fonctionnalités.",
+    "document": "topics/SetupGoogleServicesWithMyAccounting.pdf",
+    "documentType": "pdf",
+    "articles": [
+      {
+        "title": "Google Cloud Console",
+        "url": "https://console.cloud.google.com/"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Software",
+    "title": "MyAccounting Business Analysis",
+    "description": "Functional business analysis document detailing the features and functionalities of MyAccounting software.",
+    "descriptionFr": "Document d'analyse fonctionnelle métier détaillant les fonctionnalités du logiciel MyAccounting.",
+    "document": "topics/MyAccountFunctionalAnalysis.pdf",
+    "documentType": "pdf",
+    "articles": []
+  },
+  {
+    "id": 5,
+    "category": "Programming",
+    "title": "Powerbuilder Overview",
+    "description": "Comprehensive overview of Powerbuilder, covering its features, capabilities, and use cases in software development.",
+    "descriptionFr": "Aperçu complet de Powerbuilder couvrant ses fonctionnalités, capacités et cas d'utilisation dans le développement logiciel.",
+    "document": "topics/PowerbuilderOverview.pdf",
+    "documentType": "pdf",
+    "articles": []
+  },
+  {
+    "id": 6,
+    "category": "Programming",
+    "title": "Informix 4gl Overview",
+    "description": "Comprehensive overview of Informix 4gl, covering its features, capabilities, and use cases in software development.",
+    "descriptionFr": "Aperçu complet d'Informix 4gl couvrant ses fonctionnalités, capacités et cas d'utilisation dans le développement logiciel.",
+    "document": "topics/Informix4gl.pdf",
+    "documentType": "pdf",
+    "articles": []
+  }
+]

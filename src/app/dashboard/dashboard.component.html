@@ -1,0 +1,247 @@
+<mat-toolbar class="app-toolbar">
+  <span class="toolbar-title">
+    <mat-icon>school</mat-icon>
+    {{ 'DASHBOARD.WELCOME' | translate: { name: username() } }}
+  </span>
+  <span class="spacer"></span>
+  @if (isAdmin()) {
+    <button mat-stroked-button class="admin-btn" (click)="openPanel()">
+      <mat-icon>admin_panel_settings</mat-icon>
+      {{ 'DASHBOARD.MANAGE_TOPICS' | translate }}
+    </button>
+  }
+  <button mat-stroked-button class="lang-toolbar-btn" (click)="switchLang()">
+    {{ 'LANG.SWITCH' | translate }}
+  </button>
+  <button mat-stroked-button (click)="logout()">
+    <mat-icon>logout</mat-icon>
+    {{ 'DASHBOARD.LOGOUT' | translate }}
+  </button>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <div class="dashboard-content">
+
+  <!-- Welcome banner -->
+  <div class="welcome-banner">
+    <div class="welcome-banner-text">
+      <h2 class="welcome-title">
+        {{ 'DASHBOARD.HERO_GREETING' | translate: { fullname: fullname() ?? username() } }}
+      </h2>
+      <p class="welcome-subtitle">{{ 'DASHBOARD.HERO_SUBTITLE' | translate }}</p>
+    </div>
+    <mat-icon class="welcome-icon">school</mat-icon>
+  </div>
+
+  <h1 class="section-title">{{ 'DASHBOARD.TOPICS_TITLE' | translate }}</h1>
+  <p class="section-subtitle">{{ 'DASHBOARD.TOPICS_SUBTITLE' | translate }}</p>
+
+  @if (loading()) {
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  }
+
+  @if (!loading() && topics().length === 0) {
+    <p class="no-topics">{{ 'DASHBOARD.NO_TOPICS' | translate }}</p>
+  }
+
+  <mat-accordion class="categories-accordion" multi>
+    @for (group of categorizedTopics(); track group.category) {
+      <mat-expansion-panel class="category-panel" [expanded]="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title class="category-panel-title">
+            <mat-icon>folder_open</mat-icon>
+            {{ group.category }}
+            <span class="category-count">{{ group.topics.length }}</span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="topics-grid">
+          @for (topic of group.topics; track topic.id) {
+            <mat-card class="topic-card">
+        <mat-card-header>
+          <mat-card-title>{{ topic.title }}</mat-card-title>
+          <mat-card-subtitle>
+            <mat-chip [class]="'chip-' + topic.documentType">
+              <mat-icon>{{ topic.documentType === 'pdf' ? 'picture_as_pdf' : 'article' }}</mat-icon>
+              {{ topic.documentType.toUpperCase() }}
+            </mat-chip>
+          </mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+          <p class="topic-description">{{ translate.currentLang === 'fr' && topic.descriptionFr ? topic.descriptionFr : topic.description }}</p>
+        </mat-card-content>
+
+        <mat-expansion-panel class="articles-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon>menu_book</mat-icon>
+              {{ 'DASHBOARD.RELATED_ARTICLES' | translate }}
+              ({{ topic.articles.length }})
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <mat-list role="list">
+            @for (article of topic.articles; track article.url) {
+              <mat-list-item role="listitem">
+                <a [href]="article.url" target="_blank" rel="noopener noreferrer" class="article-link">
+                  <mat-icon matListItemIcon>open_in_new</mat-icon>
+                  {{ article.title }}
+                </a>
+              </mat-list-item>
+            }
+          </mat-list>
+        </mat-expansion-panel>
+
+        <mat-card-actions>
+          <button mat-stroked-button color="primary" (click)="openDocument(topic)">
+            <mat-icon>{{ topic.documentType === 'pdf' ? 'picture_as_pdf' : 'article' }}</mat-icon>
+            {{ 'DASHBOARD.OPEN_DOCUMENT' | translate }}
+          </button>
+        </mat-card-actions>
+          </mat-card>
+          }
+        </div>
+      </mat-expansion-panel>
+    }
+  </mat-accordion>
+  </div><!-- /.dashboard-content -->
+  </mat-sidenav-content>
+
+  <!-- =========================================================
+       ADMIN TOPICS MANAGEMENT PANEL (right-side sidenav)
+       ========================================================= -->
+  <mat-sidenav #topicsPanel position="end" mode="over" class="topics-panel">
+
+    <!-- LIST VIEW -->
+    @if (panelMode() === 'list') {
+      <div class="panel-header">
+        <div class="panel-header-row">
+          <span class="panel-title">
+            <mat-icon>admin_panel_settings</mat-icon>
+            Manage Topics
+          </span>
+          <button mat-icon-button (click)="closePanel()" matTooltip="Close">
+            <mat-icon>close</mat-icon>
+          </button>
+        </div>
+        <div class="panel-header-actions">
+          <button mat-raised-button color="primary" class="panel-add-btn" (click)="openAddForm()">
+            <mat-icon>add</mat-icon> Add Topic
+          </button>
+          <button mat-stroked-button color="warn" class="panel-reset-btn" (click)="resetTopics()" matTooltip="Reload topics from topics.json and clear local changes">
+            <mat-icon>restart_alt</mat-icon> Reset to Defaults
+          </button>
+        </div>
+      </div>
+      <mat-divider></mat-divider>
+      <div class="panel-list">
+        @if (!loading() && topics().length === 0) {
+          <p class="panel-empty">No topics yet. Click <strong>Add Topic</strong> to create one.</p>
+        }
+        @for (topic of topics(); track topic.id) {
+          <div class="panel-topic-row">
+            <span class="panel-topic-title">{{ topic.title }}</span>
+            <div class="panel-topic-actions">
+              <button mat-icon-button color="primary" (click)="openEditForm(topic)" matTooltip="Edit">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-icon-button color="warn" (click)="deleteTopic(topic)" matTooltip="Delete">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </div>
+          </div>
+        }
+      </div>
+    }
+
+    <!-- FORM VIEW (Add / Edit) -->
+    @if (panelMode() === 'form') {
+      <div class="panel-header">
+        <div class="panel-header-row">
+          <button mat-icon-button (click)="backToList()" matTooltip="Back to list">
+            <mat-icon>arrow_back</mat-icon>
+          </button>
+          <span class="panel-title">{{ editingTopic() ? 'Edit Topic' : 'New Topic' }}</span>
+        </div>
+      </div>
+      <mat-divider></mat-divider>
+      <div class="panel-form-body">
+        <form [formGroup]="topicForm" novalidate>
+
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Category</mat-label>
+            <input matInput formControlName="category" placeholder="e.g. Software, Programming" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Title</mat-label>
+            <input matInput formControlName="title" />
+            @if (topicForm.get('title')?.invalid && topicForm.get('title')?.touched) {
+              <mat-error>Title is required</mat-error>
+            }
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Description</mat-label>
+            <textarea matInput formControlName="description" rows="3"></textarea>
+            @if (topicForm.get('description')?.invalid && topicForm.get('description')?.touched) {
+              <mat-error>Description is required</mat-error>
+            }
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Document URL</mat-label>
+            <input matInput formControlName="document" placeholder="topics/myfile.pdf or topics/myfile.md" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Document Type</mat-label>
+            <mat-select formControlName="documentType">
+              <mat-option value="pdf">PDF</mat-option>
+              <mat-option value="markdown">Markdown</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <div class="articles-section">
+            <div class="articles-header">
+              <span class="articles-label">Related Articles</span>
+              <button mat-stroked-button type="button" (click)="addArticle()">
+                <mat-icon>add</mat-icon> Add
+              </button>
+            </div>
+            <div formArrayName="articles">
+              @for (ctrl of articlesArray.controls; track $index) {
+                <div [formGroupName]="$index" class="article-row">
+                  <mat-form-field appearance="outline" class="article-title-field">
+                    <mat-label>Title</mat-label>
+                    <input matInput formControlName="title" />
+                  </mat-form-field>
+                  <mat-form-field appearance="outline" class="article-url-field">
+                    <mat-label>URL</mat-label>
+                    <input matInput formControlName="url" />
+                  </mat-form-field>
+                  <button mat-icon-button color="warn" type="button"
+                          (click)="removeArticle($index)" matTooltip="Remove article">
+                    <mat-icon>remove_circle</mat-icon>
+                  </button>
+                </div>
+              }
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <div class="panel-form-actions">
+        <button mat-raised-button color="primary" (click)="saveForm()">
+          <mat-icon>save</mat-icon> Save
+        </button>
+        <button mat-stroked-button (click)="closePanel()">
+          <mat-icon>close</mat-icon> Close
+        </button>
+      </div>
+    }
+
+  </mat-sidenav>
+</mat-sidenav-container>

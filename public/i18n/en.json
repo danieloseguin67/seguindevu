@@ -1,0 +1,27 @@
+{
+  "LOGIN": {
+    "TITLE": "Sign In",
+    "USERNAME": "Username",
+    "PASSWORD": "Password",
+    "SUBMIT": "Sign In",
+    "REQUIRED_USERNAME": "Username is required",
+    "REQUIRED_PASSWORD": "Password is required",
+    "INVALID_CREDENTIALS": "Invalid username or password",
+    "LOADING": "Signing in..."
+  },
+  "DASHBOARD": {
+    "WELCOME": "Welcome, {{name}}!",
+    "HERO_GREETING": "Welcome to SeguinDev University, {{fullname}}!",
+    "HERO_SUBTITLE": "Explore our learning topics and grow your skills.",
+    "LOGOUT": "Logout",
+    "MANAGE_TOPICS": "Manage Topics",
+    "TOPICS_TITLE": "Learning Topics",
+    "TOPICS_SUBTITLE": "Explore the topics below. Click a card to see related articles.",
+    "RELATED_ARTICLES": "Related Articles",
+    "OPEN_DOCUMENT": "Open Document",
+    "NO_TOPICS": "No topics available."
+  },
+  "LANG": {
+    "SWITCH": "Français"
+  }
+}

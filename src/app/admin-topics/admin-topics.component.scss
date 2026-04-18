@@ -1,0 +1,109 @@
+.admin-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  button {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.7);
+    margin-left: 8px;
+  }
+
+  .toolbar-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 4px;
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+}
+
+.admin-content {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.table-header {
+  margin-bottom: 12px;
+
+  .topic-count {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.55);
+  }
+}
+
+.table-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.topics-table {
+  width: 100%;
+
+  .title-cell {
+    font-weight: 500;
+    min-width: 140px;
+  }
+
+  .desc-cell {
+    max-width: 340px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  .actions-cell {
+    white-space: nowrap;
+  }
+}
+
+.chip-pdf {
+  background-color: #ffebee !important;
+  color: #c62828 !important;
+  font-size: 0.75rem !important;
+}
+
+.chip-markdown {
+  background-color: #e8f5e9 !important;
+  color: #2e7d32 !important;
+  font-size: 0.75rem !important;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 80px 16px;
+  color: rgba(0, 0, 0, 0.5);
+
+  .empty-icon {
+    font-size: 72px;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 16px;
+    color: #90caf9;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 0 0 8px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  p {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .desc-cell {
+    display: none;
+  }
+}

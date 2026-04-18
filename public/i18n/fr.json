@@ -1,0 +1,27 @@
+{
+  "LOGIN": {
+    "TITLE": "Connexion",
+    "USERNAME": "Nom d'utilisateur",
+    "PASSWORD": "Mot de passe",
+    "SUBMIT": "Se connecter",
+    "REQUIRED_USERNAME": "Le nom d'utilisateur est requis",
+    "REQUIRED_PASSWORD": "Le mot de passe est requis",
+    "INVALID_CREDENTIALS": "Nom d'utilisateur ou mot de passe invalide",
+    "LOADING": "Connexion en cours..."
+  },
+  "DASHBOARD": {
+    "WELCOME": "Bienvenue, {{name}} !",
+    "HERO_GREETING": "Bienvenue à SeguinDev Université, {{fullname}} !",
+    "HERO_SUBTITLE": "Explorez nos sujets d'apprentissage et développez vos compétences.",
+    "LOGOUT": "Déconnexion",
+    "MANAGE_TOPICS": "Gérer les sujets",
+    "TOPICS_TITLE": "Sujets d'apprentissage",
+    "TOPICS_SUBTITLE": "Explorez les sujets ci-dessous. Cliquez sur une carte pour voir les articles liés.",
+    "RELATED_ARTICLES": "Articles liés",
+    "OPEN_DOCUMENT": "Ouvrir le document",
+    "NO_TOPICS": "Aucun sujet disponible."
+  },
+  "LANG": {
+    "SWITCH": "English"
+  }
+}

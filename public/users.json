@@ -1,0 +1,17 @@
+[
+  {
+    "username": "admin",
+    "userfullname": "Administrator User",
+    "passwordHash": "$2b$10$oW9M4VE6cy/z9P0Y42Hxgen1dmaQZ11yKEqFywdrKmsknMyxdsyhe"
+  },
+  {
+    "username": "daniel",
+    "userfullname": "Daniel Seguin",
+    "passwordHash": "$2b$10$oW9M4VE6cy/z9P0Y42Hxgen1dmaQZ11yKEqFywdrKmsknMyxdsyhe"
+  },
+  {
+    "username": "jessica",
+    "userfullname": "jessica Larmour",
+    "passwordHash": "$2b$10$9z8M/zBXejp0rZAgviItyuWQM4xp5HGfQeKBg54Cv7L2215a58ioW"
+  }
+]

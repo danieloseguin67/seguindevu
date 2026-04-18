@@ -1,0 +1,91 @@
+<mat-toolbar color="primary" class="admin-toolbar">
+  <button mat-icon-button (click)="goBack()" matTooltip="Back to Dashboard">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <span class="toolbar-title">
+    <mat-icon>admin_panel_settings</mat-icon>
+    Manage Topics
+  </span>
+  <span class="spacer"></span>
+  <button mat-stroked-button (click)="openAdd()">
+    <mat-icon>add</mat-icon> Add Topic
+  </button>
+  <button mat-stroked-button (click)="logout()">
+    <mat-icon>logout</mat-icon>
+  </button>
+</mat-toolbar>
+
+@if (loading()) {
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+}
+
+<div class="admin-content">
+  @if (!loading() && topics().length === 0) {
+    <div class="empty-state">
+      <mat-icon class="empty-icon">topic</mat-icon>
+      <h2>No topics yet</h2>
+      <p>Click <strong>Add Topic</strong> to create your first one.</p>
+      <button mat-raised-button color="primary" (click)="openAdd()">
+        <mat-icon>add</mat-icon> Add Topic
+      </button>
+    </div>
+  }
+
+  @if (!loading() && topics().length > 0) {
+    <div class="table-header">
+      <span class="topic-count">{{ topics().length }} topic{{ topics().length !== 1 ? 's' : '' }}</span>
+    </div>
+
+    <div class="table-wrapper">
+      <table mat-table [dataSource]="topics()" class="topics-table">
+
+        <!-- Title -->
+        <ng-container matColumnDef="title">
+          <th mat-header-cell *matHeaderCellDef>Title</th>
+          <td mat-cell *matCellDef="let t" class="title-cell">{{ t.title }}</td>
+        </ng-container>
+
+        <!-- Description -->
+        <ng-container matColumnDef="description">
+          <th mat-header-cell *matHeaderCellDef>Description</th>
+          <td mat-cell *matCellDef="let t" class="desc-cell">{{ t.description }}</td>
+        </ng-container>
+
+        <!-- Type -->
+        <ng-container matColumnDef="type">
+          <th mat-header-cell *matHeaderCellDef>Type</th>
+          <td mat-cell *matCellDef="let t">
+            <mat-chip [class]="'chip-' + t.documentType">
+              <mat-icon>{{ t.documentType === 'pdf' ? 'picture_as_pdf' : 'article' }}</mat-icon>
+              {{ t.documentType | uppercase }}
+            </mat-chip>
+          </td>
+        </ng-container>
+
+        <!-- Articles count -->
+        <ng-container matColumnDef="articles">
+          <th mat-header-cell *matHeaderCellDef>Articles</th>
+          <td mat-cell *matCellDef="let t">{{ t.articles.length }}</td>
+        </ng-container>
+
+        <!-- Actions -->
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef>Actions</th>
+          <td mat-cell *matCellDef="let t" class="actions-cell">
+            <button mat-icon-button color="primary" (click)="openEdit(t)"
+                    matTooltip="Edit topic">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button color="warn" (click)="delete(t)"
+                    matTooltip="Delete topic">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  }
+</div>
