@@ -29,6 +29,8 @@ export class TopicsService {
       }
 
       const title = typeof t['title'] === 'string' ? t['title'] : '';
+      const titleFr =
+        typeof t['titleFr'] === 'string' ? t['titleFr'] : undefined;
       const category = typeof t['category'] === 'string' && t['category'].trim()
         ? t['category'].trim()
         : 'General';
@@ -51,6 +53,7 @@ export class TopicsService {
         )
         .map((a) => ({
           title: typeof a['title'] === 'string' ? a['title'] : '',
+          ...(typeof a['titleFr'] === 'string' ? { titleFr: a['titleFr'] } : {}),
           url: typeof a['url'] === 'string' ? a['url'] : '',
         }))
         .filter((a) => a.title.length > 0 && a.url.length > 0);
@@ -59,6 +62,7 @@ export class TopicsService {
         id,
         category,
         title,
+        ...(titleFr ? { titleFr } : {}),
         description,
         ...(descriptionFr ? { descriptionFr } : {}),
         document,

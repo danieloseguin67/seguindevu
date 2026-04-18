@@ -60,7 +60,7 @@
           @for (topic of group.topics; track topic.id) {
             <mat-card class="topic-card">
         <mat-card-header>
-          <mat-card-title>{{ topic.title }}</mat-card-title>
+          <mat-card-title>{{ translate.currentLang === 'fr' && topic.titleFr ? topic.titleFr : topic.title }}</mat-card-title>
           <mat-card-subtitle>
             <mat-chip [class]="'chip-' + topic.documentType">
               <mat-icon>{{ topic.documentType === 'pdf' ? 'picture_as_pdf' : 'article' }}</mat-icon>
@@ -87,7 +87,7 @@
               <mat-list-item role="listitem">
                 <a [href]="article.url" target="_blank" rel="noopener noreferrer" class="article-link">
                   <mat-icon matListItemIcon>open_in_new</mat-icon>
-                  {{ article.title }}
+                  {{ translate.currentLang === 'fr' && article.titleFr ? article.titleFr : article.title }}
                 </a>
               </mat-list-item>
             }

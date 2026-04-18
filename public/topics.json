@@ -3,6 +3,7 @@
     "id": 1,
     "category": "Software",
     "title": "MyAccounting User Guide",
+    "titleFr": "Guide d'utilisation MyAccounting",
     "description": "Comprehensive accounting user guide covering core accounting concepts and workflows.",
     "descriptionFr": "Guide utilisateur comptable complet couvrant les concepts fondamentaux et les flux de travail de la comptabilité.",
     "document": "topics/MyAccountingUserGuide.pdf",
@@ -13,6 +14,7 @@
     "id": 2,
     "category": "Software",
     "title": "MyAccounting IT Functional Analysis",
+    "titleFr": "Analyse fonctionnelle informatique MyAccounting",
     "description": "Functional IT analysis document detailing the features and functionalities of MyAccounting software.",
     "descriptionFr": "Document d'analyse fonctionnelle informatique détaillant les fonctionnalités du logiciel MyAccounting.",
     "document": "topics/MyAccountFunctionalAnalysis.pdf",
@@ -23,6 +25,7 @@
     "id": 3,
     "category": "Software",
     "title": "MyAccounting integration with Google",
+    "titleFr": "Intégration de MyAccounting avec Google",
     "description": "Step-by-step guide on how to set up and integrate MyAccounting with Google services for enhanced functionality.",
     "descriptionFr": "Guide étape par étape pour configurer et intégrer MyAccounting avec les services Google afin d'améliorer les fonctionnalités.",
     "document": "topics/SetupGoogleServicesWithMyAccounting.pdf",
@@ -30,6 +33,7 @@
     "articles": [
       {
         "title": "Google Cloud Console",
+        "titleFr": "Console Google Cloud",
         "url": "https://console.cloud.google.com/"
       }
     ]
@@ -38,6 +42,7 @@
     "id": 4,
     "category": "Software",
     "title": "MyAccounting Business Analysis",
+    "titleFr": "Analyse métier MyAccounting",
     "description": "Functional business analysis document detailing the features and functionalities of MyAccounting software.",
     "descriptionFr": "Document d'analyse fonctionnelle métier détaillant les fonctionnalités du logiciel MyAccounting.",
     "document": "topics/MyAccountFunctionalAnalysis.pdf",
@@ -48,6 +53,7 @@
     "id": 5,
     "category": "Programming",
     "title": "Powerbuilder Overview",
+    "titleFr": "Aperçu de Powerbuilder",
     "description": "Comprehensive overview of Powerbuilder, covering its features, capabilities, and use cases in software development.",
     "descriptionFr": "Aperçu complet de Powerbuilder couvrant ses fonctionnalités, capacités et cas d'utilisation dans le développement logiciel.",
     "document": "topics/PowerbuilderOverview.pdf",
@@ -58,10 +64,45 @@
     "id": 6,
     "category": "Programming",
     "title": "Informix 4gl Overview",
+    "titleFr": "Aperçu d'Informix 4gl",
     "description": "Comprehensive overview of Informix 4gl, covering its features, capabilities, and use cases in software development.",
     "descriptionFr": "Aperçu complet d'Informix 4gl couvrant ses fonctionnalités, capacités et cas d'utilisation dans le développement logiciel.",
     "document": "topics/Informix4gl.pdf",
     "documentType": "pdf",
     "articles": []
+  },
+  {
+    "id": 7,
+    "category": "Free Tools",
+    "title": "Well Being Personal Growth Tracker",
+    "titleFr": "Tracker de bien-être et de croissance personnelle",
+    "description": "A personal growth tracker designed to help individuals monitor and improve their well-being across various aspects of life, including physical health, mental wellness, and personal development.",
+    "descriptionFr": "Un tracker de croissance personnelle conçu pour aider les individus à surveiller et améliorer leur bien-être dans divers aspects de la vie, y compris la santé physique, le bien-être mental et le développement personnel.",
+    "document": "topics/personalgrowthtracker.pdf",
+    "documentType": "pdf",
+    "articles": [
+      {
+        "title": "Personal Growth Tracker Dashboard",
+        "titleFr": "Tableau de bord du tracker de croissance personnelle",
+        "url": "https://personalgrowthtracker.seguin.dev/#/dashboard"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "category": "Tools to buy",
+    "title": "MyAccounting Accounting Software Beta Version",
+    "titleFr": "MyAccounting Logiciel de comptabilité Version bêta",
+    "description": "MyAccounting is a comprehensive accounting software designed to streamline financial management for businesses of all sizes. The beta version offers a range of features including invoicing, expense tracking, financial reporting, and integration with popular payment gateways. With an intuitive user interface and robust functionality, MyAccounting aims to simplify accounting processes and enhance financial visibility for users.",
+    "descriptionFr": "MyAccounting est un logiciel de comptabilité complet conçu pour rationaliser la gestion financière des entreprises de toutes tailles. La version bêta offre une gamme de fonctionnalités, notamment la facturation, le suivi des dépenses, les rapports financiers et l'intégration avec",
+    "document": "topics/myaccountingoverview.pdf",
+    "documentType": "pdf",
+    "articles": [
+      {
+        "title": "Personal Growth Tracker Dashboard",
+        "titleFr": "Tableau de bord du tracker de croissance personnelle",
+        "url": "https://personalgrowthtracker.seguin.dev/#/dashboard"
+      }
+    ]
   }
 ]
