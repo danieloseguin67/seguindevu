@@ -32,7 +32,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --base-href /seguindevu/ --output-path dist/seguindevu
+        run: npm run build -- --base-href / --output-path dist/seguindevu
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
