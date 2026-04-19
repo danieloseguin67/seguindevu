@@ -302,10 +302,10 @@
     "titleFr": "MyPasswordManager — Outil de gestion de mots de passe sécurisé",
     "description": "MyPasswordManager is a secure password management tool designed to help individuals and businesses safely store and manage their passwords. It offers features such as encrypted password storage, password generation, and secure sharing options. With an intuitive user interface and robust security measures, MyPasswordManager aims to simplify password management while ensuring the highest level of security for users.",
     "descriptionFr": "MyPasswordManager est un outil de gestion de mots de passe sécurisé conçu pour aider les particuliers et les entreprises à stocker et gérer leurs mots de passe en toute sécurité. Il offre des fonctionnalités telles que le stockage de mots de passe crypté, la génération de mots de passe et des options de partage sécurisé. Avec une interface utilisateur intuitive et des mesures de sécurité robustes, MyPasswordManager vise à simplifier la gestion des mots de passe tout en garantissant le plus haut niveau de sécurité pour les utilisateurs.",
-    "document": "topics/MyAccountingDataModel.pdf",
+    "document": "topics/MyPasswordManager.pdf",
     "documentType": "pdf",
     "price": 49.99,
-    "available": false,
+    "available": true,
     "subscriptionRequired": false,
     "supportplanavailable": true,
     "articles": []
