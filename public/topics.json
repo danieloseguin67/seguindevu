@@ -323,6 +323,11 @@
     "available": true,
     "subscriptionRequired": false,
     "supportplanavailable": false,
-    "articles": []
+    "articles": [
+      {
+        "title": "Django Project",
+        "url": "https://www.djangoproject.com/"
+      }
+    ]
   }
 ]
