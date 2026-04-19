@@ -309,5 +309,20 @@
     "subscriptionRequired": false,
     "supportplanavailable": true,
     "articles": []
+  },
+  {
+    "id": 16,
+    "category": "Business demo prototypes",
+    "title": "E-commerce Web App Solution Prototype",
+    "titleFr": "Prototype de solution d'application web de commerce électronique",
+    "description": "Prototype of a comprehensive e-commerce web application solution, showcasing key features such as product catalog, shopping cart, checkout process, and user account management. This prototype serves as a demonstration of the application's functionality and user experience.",
+    "descriptionFr": "Prototype d'une solution complète d'application web de commerce électronique, présentant des fonctionnalités clés telles que le catalogue de produits, le panier d'achat, le processus de paiement et la gestion des comptes utilisateurs. Ce prototype sert de démonstration de la fonctionnalité et de l'expérience utilisateur de l'application.",
+    "document": "topics/EcommerceWebAppSolutionPrototype.pdf",
+    "documentType": "pdf",
+    "price": 0,
+    "available": true,
+    "subscriptionRequired": false,
+    "supportplanavailable": false,
+    "articles": []
   }
 ]
