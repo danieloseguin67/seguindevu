@@ -2,16 +2,38 @@
   {
     "username": "admin",
     "userfullname": "Administrator User",
+    "email": "daniel@seguin.dev",
+    "changepasswordnextlogin": false,
     "passwordHash": "$2b$10$oW9M4VE6cy/z9P0Y42Hxgen1dmaQZ11yKEqFywdrKmsknMyxdsyhe"
   },
   {
     "username": "daniel",
     "userfullname": "Daniel Seguin",
+    "email": "danieloseguin67@gmail.com",
+    "changepasswordnextlogin": false,
     "passwordHash": "$2b$10$oW9M4VE6cy/z9P0Y42Hxgen1dmaQZ11yKEqFywdrKmsknMyxdsyhe"
   },
   {
     "username": "jessica",
     "userfullname": "jessica Larmour",
-    "passwordHash": "$2b$10$9z8M/zBXejp0rZAgviItyuWQM4xp5HGfQeKBg54Cv7L2215a58ioW"
+    "email": "larmour.j.a@gmail.com",
+    "changepasswordnextlogin": false,
+    "passwordHash": "$2b$10$AAHnxxy6HhQbj68v5vqUweqeib5CwJ/99TcT..pPd/8yJFWovYGM2"
+  },
+  {
+    "username": "nathalie",
+    "userfullname": "Nathalie Seguin",
+    "email": "nathalieaseguin68@gmail.com",
+    "changepasswordnextlogin": false,
+    "passwordHash": "$2b$10$yaQRswo2qCpj/L8./ypLL.H213jtPFj3rRcY81Pbb9TDd44GCstY6",
+    "passwordPlain": "Welcome$2026"
+  },
+  {
+    "username": "danielpwgsc",
+    "userfullname": "Daniel Seguin",
+    "email": "daniel.seguin@tpsgc-pwgsc.gc.ca",
+    "changepasswordnextlogin": false,
+    "passwordHash": "$2b$10$dpAbTBMda/ZbJCnsiEdjjuQsj.pNimecwYSeVAPqyIHL27PyhbdkO",
+    "passwordPlain": "Fre2611%01"
   }
 ]

@@ -19,9 +19,18 @@
     "TOPICS_SUBTITLE": "Explorez les sujets ci-dessous. Cliquez sur une carte pour voir les articles liés.",
     "RELATED_ARTICLES": "Articles liés",
     "OPEN_DOCUMENT": "Ouvrir le document",
-    "NO_TOPICS": "Aucun sujet disponible."
+    "NO_TOPICS": "Aucun sujet disponible.",
+    "AVAILABLE": "Disponible",
+    "AVAILABLE_SOON": "Disponible bientôt",
+    "PRICE": "Prix"
   },
   "LANG": {
     "SWITCH": "English"
+  },
+  "CATEGORIES": {
+    "Documentation": "Documentation",
+    "Programming": "Programmation",
+    "Free Tools": "Outils gratuits",
+    "Software and Tools": "Logiciels et outils"
   }
 }

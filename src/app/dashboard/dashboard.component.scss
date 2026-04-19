@@ -355,6 +355,41 @@
   color: #2e7d32 !important;
 }
 
+.chip-price {
+  background-color: #fff3e0 !important;
+  color: #e65100 !important;
+}
+
+.chip-available {
+  background-color: #e8f5e9 !important;
+  color: #2e7d32 !important;
+}
+
+.chip-available-soon {
+  background-color: #f3e5f5 !important;
+  color: #6a1b9a !important;
+}
+
+.chip-subscription-required {
+  background-color: #fce4ec !important;
+  color: #c62828 !important;
+}
+
+.chip-subscription-not-required {
+  background-color: #e8f5e9 !important;
+  color: #2e7d32 !important;
+}
+
+.chip-support-available {
+  background-color: #e3f2fd !important;
+  color: #1565c0 !important;
+}
+
+.chip-support-not-available {
+  background-color: #fafafa !important;
+  color: #757575 !important;
+}
+
 @media (max-width: 600px) {
   .app-toolbar {
     .toolbar-title {

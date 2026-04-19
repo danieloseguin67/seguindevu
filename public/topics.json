@@ -1,35 +1,47 @@
 [
   {
     "id": 1,
-    "category": "Software",
+    "category": "Documentation",
     "title": "MyAccounting User Guide",
     "titleFr": "Guide d'utilisation MyAccounting",
     "description": "Comprehensive accounting user guide covering core accounting concepts and workflows.",
     "descriptionFr": "Guide utilisateur comptable complet couvrant les concepts fondamentaux et les flux de travail de la comptabilité.",
     "document": "topics/MyAccountingUserGuide.pdf",
     "documentType": "pdf",
+    "price": 0,
+    "available": true,
+    "subscriptionRequired": false,
+    "supportplanavailable": false,
     "articles": []
   },
   {
     "id": 2,
-    "category": "Software",
-    "title": "MyAccounting IT Functional Analysis",
-    "titleFr": "Analyse fonctionnelle informatique MyAccounting",
-    "description": "Functional IT analysis document detailing the features and functionalities of MyAccounting software.",
-    "descriptionFr": "Document d'analyse fonctionnelle informatique détaillant les fonctionnalités du logiciel MyAccounting.",
-    "document": "topics/MyAccountFunctionalAnalysis.pdf",
+    "category": "Documentation",
+    "title": "MyAccounting Architectural Analysis",
+    "titleFr": "Analyse architecturale de MyAccounting",
+    "description": "Detailed architectural analysis document outlining the software architecture, design patterns, and technical components of MyAccounting.",
+    "descriptionFr": "Document d'analyse architecturale détaillé décrivant l'architecture logicielle, les modèles de conception et les composants techniques de MyAccounting.",
+    "document": "topics/MyAccountingArchitecture.pdf",
     "documentType": "pdf",
+    "price": 0,
+    "available": true,
+    "subscriptionRequired": false,
+    "supportplanavailable": false,
     "articles": []
   },
   {
     "id": 3,
-    "category": "Software",
+    "category": "Documentation",
     "title": "MyAccounting integration with Google",
     "titleFr": "Intégration de MyAccounting avec Google",
     "description": "Step-by-step guide on how to set up and integrate MyAccounting with Google services for enhanced functionality.",
     "descriptionFr": "Guide étape par étape pour configurer et intégrer MyAccounting avec les services Google afin d'améliorer les fonctionnalités.",
     "document": "topics/SetupGoogleServicesWithMyAccounting.pdf",
     "documentType": "pdf",
+    "price": 0,
+    "available": true,
+    "subscriptionRequired": false,
+    "supportplanavailable": false,
     "articles": [
       {
         "title": "Google Cloud Console",
@@ -40,35 +52,53 @@
   },
   {
     "id": 4,
-    "category": "Software",
-    "title": "MyAccounting Business Analysis",
-    "titleFr": "Analyse métier MyAccounting",
-    "description": "Functional business analysis document detailing the features and functionalities of MyAccounting software.",
-    "descriptionFr": "Document d'analyse fonctionnelle métier détaillant les fonctionnalités du logiciel MyAccounting.",
-    "document": "topics/MyAccountFunctionalAnalysis.pdf",
+    "category": "Documentation",
+    "title": "MyAccounting Functional Business Analysis",
+    "titleFr": "Analyse fonctionnelle métier de MyAccounting",
+    "description": "Detailed functional business analysis document outlining the business requirements, user stories, and functional specifications of MyAccounting.",
+    "descriptionFr": "Document d'analyse fonctionnelle métier détaillé décrivant les exigences métier, les user stories et les spécifications fonctionnelles de MyAccounting.",
+    "document": "topics/MyAccountingFunctionalAnalysis.pdf",
     "documentType": "pdf",
+    "price": 0,
+    "available": true,
+    "subscriptionRequired": false,
+    "supportplanavailable": false,
     "articles": []
   },
   {
     "id": 5,
     "category": "Programming",
-    "title": "Powerbuilder Overview",
+    "title": "Powerbuilder 2025 Overview",
     "titleFr": "Aperçu de Powerbuilder",
     "description": "Comprehensive overview of Powerbuilder, covering its features, capabilities, and use cases in software development.",
     "descriptionFr": "Aperçu complet de Powerbuilder couvrant ses fonctionnalités, capacités et cas d'utilisation dans le développement logiciel.",
     "document": "topics/PowerbuilderOverview.pdf",
     "documentType": "pdf",
-    "articles": []
+    "price": 0,
+    "available": true,
+    "subscriptionRequired": false,
+    "supportplanavailable": false,
+    "articles": [
+       {
+        "title": "Appeon Website",
+        "titleFr": "Site internet d'Appeon",
+        "url": "https://www.appeon.com/"
+      }
+    ]
   },
   {
     "id": 6,
     "category": "Programming",
-    "title": "Informix 4gl Overview",
-    "titleFr": "Aperçu d'Informix 4gl",
-    "description": "Comprehensive overview of Informix 4gl, covering its features, capabilities, and use cases in software development.",
-    "descriptionFr": "Aperçu complet d'Informix 4gl couvrant ses fonctionnalités, capacités et cas d'utilisation dans le développement logiciel.",
-    "document": "topics/Informix4gl.pdf",
+    "title": "Migrating Powerbuilder to Modern Platforms using Django Framework Overview",
+    "titleFr": "Aperçu de la migration de Powerbuilder vers des plateformes modernes utilisant le framework Django",
+    "description":  "Comprehensive overview of migrating Powerbuilder applications to modern platforms using the Django framework, covering migration strategies, best practices, and case studies.",
+    "descriptionFr": "Aperçu complet de la migration des applications Powerbuilder vers des plateformes modernes utilisant le framework Django, couvrant les stratégies de migration, les meilleures pratiques et les études de cas.",
+    "document": "topics/PowerbuilderModernization1.pdf",
     "documentType": "pdf",
+    "price": 0,
+    "available": false,
+    "subscriptionRequired": false,
+    "supportplanavailable": false,
     "articles": []
   },
   {
@@ -78,8 +108,12 @@
     "titleFr": "Tracker de bien-être et de croissance personnelle",
     "description": "A personal growth tracker designed to help individuals monitor and improve their well-being across various aspects of life, including physical health, mental wellness, and personal development.",
     "descriptionFr": "Un tracker de croissance personnelle conçu pour aider les individus à surveiller et améliorer leur bien-être dans divers aspects de la vie, y compris la santé physique, le bien-être mental et le développement personnel.",
-    "document": "topics/personalgrowthtracker.pdf",
+    "document": "topics/personalgrowthtrackeruserguide.pdf",
     "documentType": "pdf",
+    "price": 0,
+    "available": true,
+    "subscriptionRequired": false,
+    "supportplanavailable": false,
     "articles": [
       {
         "title": "Personal Growth Tracker Dashboard",
@@ -90,19 +124,190 @@
   },
   {
     "id": 8,
-    "category": "Tools to buy",
-    "title": "MyAccounting Accounting Software Beta Version",
-    "titleFr": "MyAccounting Logiciel de comptabilité Version bêta",
+    "category": "Software and Tools",
+    "title": "MyAccounting Accounting Documentation Version",
+    "titleFr": "MyAccounting Logiciel de comptabilité Version",
     "description": "MyAccounting is a comprehensive accounting software designed to streamline financial management for businesses of all sizes. The beta version offers a range of features including invoicing, expense tracking, financial reporting, and integration with popular payment gateways. With an intuitive user interface and robust functionality, MyAccounting aims to simplify accounting processes and enhance financial visibility for users.",
     "descriptionFr": "MyAccounting est un logiciel de comptabilité complet conçu pour rationaliser la gestion financière des entreprises de toutes tailles. La version bêta offre une gamme de fonctionnalités, notamment la facturation, le suivi des dépenses, les rapports financiers et l'intégration avec",
-    "document": "topics/myaccountingoverview.pdf",
+    "document": "topics/MyAccounting_Marketing.pdf",
     "documentType": "pdf",
+    "price": 499.99,
+    "available": true,
+    "subscriptionRequired": false,
+    "supportplanavailable": true,
+    "articles": [
+    ]
+  },
+  {
+    "id": 9,
+    "category": "Programming",
+    "title": "Informix 4GL and RPG — Language Parallels",
+    "titleFr": "Informix 4GL et RPG — Parallèles entre les langages",
+    "description": "Analysis demonstrating the structural and conceptual similarities between Informix 4GL and ILE RPG, with side-by-side code snippets, showing that a consultant with 20+ years of Informix 4GL experience is well-qualified to perform RPG application maintenance.",
+    "descriptionFr": "Analyse démontrant les similitudes structurelles et conceptuelles entre Informix 4GL et ILE RPG, avec des extraits de code côte à côte, montrant qu'un consultant avec plus de 20 ans d'expérience en Informix 4GL est bien qualifié pour la maintenance d'applications RPG.",
+    "document": "topics/Informix4glrpg.pdf",
+    "price": 0,
+    "available": true,
+    "documentType": "pdf",
+    "subscriptionRequired": false,
+    "supportplanavailable": false,
+    "articles": []
+  },
+  {
+    "id": 10,
+    "category": "Programming",
+    "title": "Informix 4GL Overview",
+    "titleFr": "Aperçu d'Informix 4GL",
+    "description": "Comprehensive overview of Informix 4GL covering language features, embedded SQL, screen forms, report generation, and the two major code-generation ecosystems: the legacy FourGen CASE tools and the modern Genero platform by Four Js.",
+    "descriptionFr": "Aperçu complet d'Informix 4GL couvrant les fonctionnalités du langage, le SQL intégré, les formulaires écran, la génération de rapports et les deux grands écosystèmes de génération de code : les outils CASE FourGen (legacy) et la plateforme moderne Genero de Four Js.",
+    "document": "topics/informix4gloverview.pdf",
+    "documentType": "pdf",
+    "price": 0,
+    "available": true,
+    "subscriptionRequired": false,
+    "supportplanavailable": false,
     "articles": [
       {
-        "title": "Personal Growth Tracker Dashboard",
-        "titleFr": "Tableau de bord du tracker de croissance personnelle",
-        "url": "https://personalgrowthtracker.seguin.dev/#/dashboard"
+        "title": "IBM Informix 4GL Reference Manual (Publication 7044)",
+        "titleFr": "Manuel de référence IBM Informix 4GL (Publication 7044)",
+        "url": "https://publib.boulder.ibm.com/epubs/pdf/7044.pdf"
+      },
+      {
+        "title": "Genero by Four Js",
+        "titleFr": "Genero par Four Js",
+        "url": "https://4js.com/"
       }
     ]
+  },
+  {
+    "id": 11,
+    "category": "Programming",
+    "title": "Cobol Overview",
+    "titleFr": "Aperçu de Cobol",
+    "description": "Comprehensive overview of Cobol, covering its history, language features, and use cases in modern software development, particularly in legacy system maintenance and enterprise applications.",
+    "descriptionFr": "Aperçu complet de Cobol, couvrant son histoire, ses fonctionnalités linguistiques et ses cas d'utilisation dans le développement logiciel moderne, en particulier dans la maintenance des systèmes hérités et les applications d'entreprise.",
+    "document": "topics/coboloverview.pdf",
+    "documentType": "pdf",
+    "price": 0,
+    "available": true,
+    "subscriptionRequired": false,
+    "supportplanavailable": false,
+    "articles": [
+      {
+        "title": "IBM Enterprise COBOL for z/OS — Language Reference",
+        "titleFr": "IBM Enterprise COBOL pour z/OS — Référence du langage",
+        "url": "https://www.ibm.com/docs/en/cobol-zos"
+      },
+      {
+        "title": "GnuCOBOL — Open-Source COBOL Compiler",
+        "titleFr": "GnuCOBOL — Compilateur COBOL open source",
+        "url": "https://gnucobol.sourceforge.io"
+      },
+      {
+        "title": "COBOL-2023 ISO Standard Overview",
+        "titleFr": "Aperçu de la norme ISO COBOL-2023",
+        "url": "https://www.iso.org/standard/74527.html"
+      },
+      {
+        "title": "Broadcom COBOL Language Support — VS Code Extension",
+        "titleFr": "Support du langage COBOL Broadcom — Extension VS Code",
+        "url": "https://marketplace.visualstudio.com/items?itemName=broadcomMFD.cobol-language-support"
+      },
+      {
+        "title": "IBM Z Open Editor — VS Code Extension",
+        "titleFr": "IBM Z Open Editor — Extension VS Code",
+        "url": "https://marketplace.visualstudio.com/items?itemName=IBM.zopeneditor"
+      },
+      {
+        "title": "GitHub Copilot Documentation",
+        "titleFr": "Documentation de GitHub Copilot",
+        "url": "https://docs.github.com/en/copilot"
+      },
+      {
+        "title": "cobol-unit-test — Open-Source Unit Testing for COBOL",
+        "titleFr": "cobol-unit-test — Tests unitaires open source pour COBOL",
+        "url": "https://github.com/neopragma/cobol-unit-test"
+      },
+      {
+        "title": "AWS Mainframe Modernization — COBOL Auto-Transform",
+        "titleFr": "AWS Mainframe Modernization — Transformation automatique COBOL",
+        "url": "https://aws.amazon.com/mainframe-modernization/"
+      },
+      {
+        "title": "Strangler Fig Application Pattern (Martin Fowler)",
+        "titleFr": "Patron d'application Strangler Fig (Martin Fowler)",
+        "url": "https://martinfowler.com/bliki/StranglerFigApplication.html"
+      },
+      {
+        "title": "Microsoft .NET 8 Documentation",
+        "titleFr": "Documentation Microsoft .NET 8",
+        "url": "https://learn.microsoft.com/en-us/dotnet/"
+      },
+      {
+        "title": "Django Documentation",
+        "titleFr": "Documentation Django",
+        "url": "https://docs.djangoproject.com/"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "category": "Documentation",
+    "title": "MyAccounting Database Model and Dictionary",
+    "titleFr": "Modèle de données et dictionnaire de MyAccounting",
+    "description": "Detailed database model and dictionary document outlining the data structures, relationships, and schema design of MyAccounting.",
+    "descriptionFr": "Document détaillé du modèle de données et du dictionnaire décrivant les structures de données, les relations et la conception du schéma de MyAccounting.",
+    "document": "topics/MyAccountingDataModel.pdf",
+    "documentType": "pdf",
+    "price": 0,
+    "available": true,
+    "subscriptionRequired": false,
+    "supportplanavailable": false,
+    "articles": []
+  },
+  {
+    "id": 13,
+    "category": "Software and Tools",
+    "title": "DbDocGen — Database Documentation Generator",
+    "titleFr": "DbDocGen — Générateur de documentation de base de données",
+    "description": "Detailed database model and dictionary document outlining the data structures, relationships, and schema design of MyAccounting.",
+    "descriptionFr": "Document détaillé du modèle de données et du dictionnaire décrivant les structures de données, les relations et la conception du schéma de MyAccounting.",
+    "document": "topics/MyAccountingDataModel.pdf",
+    "documentType": "pdf",
+    "price": 899.99,
+    "available": false,
+    "subscriptionRequired": false,
+    "supportplanavailable": true, 
+    "articles": []
+  },
+  {
+    "id": 14,
+    "category": "Software and Tools",
+    "title": "ERD Generator — Entity-Relationship Diagram Generator",
+    "titleFr": "ERD Generator — Générateur de diagramme entité-relation",
+    "description": "Detailed database model and dictionary document outlining the data structures, relationships, and schema design of MyAccounting.",
+    "descriptionFr": "Document détaillé du modèle de données et du dictionnaire décrivant les structures de données, les relations et la conception du schéma de MyAccounting.",
+    "document": "topics/MyAccountingDataModel.pdf",
+    "documentType": "pdf",
+    "price": 899.99,
+    "available": false,
+    "subscriptionRequired": false,
+    "supportplanavailable": true,
+    "articles": []
+  },
+  {
+    "id": 15,
+    "category": "Software and Tools",
+    "title": "MyPasswordManager — Secure Password Management Tool",
+    "titleFr": "MyPasswordManager — Outil de gestion de mots de passe sécurisé",
+    "description": "MyPasswordManager is a secure password management tool designed to help individuals and businesses safely store and manage their passwords. It offers features such as encrypted password storage, password generation, and secure sharing options. With an intuitive user interface and robust security measures, MyPasswordManager aims to simplify password management while ensuring the highest level of security for users.",
+    "descriptionFr": "MyPasswordManager est un outil de gestion de mots de passe sécurisé conçu pour aider les particuliers et les entreprises à stocker et gérer leurs mots de passe en toute sécurité. Il offre des fonctionnalités telles que le stockage de mots de passe crypté, la génération de mots de passe et des options de partage sécurisé. Avec une interface utilisateur intuitive et des mesures de sécurité robustes, MyPasswordManager vise à simplifier la gestion des mots de passe tout en garantissant le plus haut niveau de sécurité pour les utilisateurs.",
+    "document": "topics/MyAccountingDataModel.pdf",
+    "documentType": "pdf",
+    "price": 49.99,
+    "available": false,
+    "subscriptionRequired": false,
+    "supportplanavailable": true,
+    "articles": []
   }
 ]

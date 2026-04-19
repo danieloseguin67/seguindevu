@@ -19,9 +19,18 @@
     "TOPICS_SUBTITLE": "Explore the topics below. Click a card to see related articles.",
     "RELATED_ARTICLES": "Related Articles",
     "OPEN_DOCUMENT": "Open Document",
-    "NO_TOPICS": "No topics available."
+    "NO_TOPICS": "No topics available.",
+    "AVAILABLE": "Available",
+    "AVAILABLE_SOON": "Available Soon",
+    "PRICE": "Price"
   },
   "LANG": {
     "SWITCH": "Français"
+  },
+  "CATEGORIES": {
+    "Documentation": "Documentation",
+    "Programming": "Programming",
+    "Free Tools": "Free Tools",
+    "Software and Tools": "Software and Tools"
   }
 }

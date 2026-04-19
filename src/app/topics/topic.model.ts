@@ -13,5 +13,9 @@ export interface Topic {
   descriptionFr?: string;
   document: string;
   documentType: 'pdf' | 'markdown';
+  price: number;
+  available: boolean;
+  subscriptionRequired: boolean;
+  supportplanavailable: boolean;
   articles: Article[];
 }

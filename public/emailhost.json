@@ -1,0 +1,7 @@
+{
+  "smtp_host": "smtp.videotron.ca",
+  "smtp_port": "587",
+  "smtp_user": "daniel.seguin.67@videotron.ca",
+  "smtp_password": "ao0dxyq1",
+  "smtp_tls": "1"
+}

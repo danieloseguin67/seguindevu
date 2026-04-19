@@ -47,11 +47,11 @@
 
   <mat-accordion class="categories-accordion" multi>
     @for (group of categorizedTopics(); track group.category) {
-      <mat-expansion-panel class="category-panel" [expanded]="true">
+      <mat-expansion-panel class="category-panel" [expanded]="false">
         <mat-expansion-panel-header>
           <mat-panel-title class="category-panel-title">
             <mat-icon>folder_open</mat-icon>
-            {{ group.category }}
+            {{ 'CATEGORIES.' + group.category | translate }}
             <span class="category-count">{{ group.topics.length }}</span>
           </mat-panel-title>
         </mat-expansion-panel-header>
@@ -66,6 +66,26 @@
               <mat-icon>{{ topic.documentType === 'pdf' ? 'picture_as_pdf' : 'article' }}</mat-icon>
               {{ topic.documentType.toUpperCase() }}
             </mat-chip>
+            @if (topic.price > 0) {
+              <mat-chip class="chip-price">
+                <mat-icon>sell</mat-icon>
+                {{ 'DASHBOARD.PRICE' | translate }}: ${{ topic.price | number:'1.2-2' }}
+              </mat-chip>
+            }
+            <mat-chip [class]="topic.available ? 'chip-available' : 'chip-available-soon'">
+              <mat-icon>{{ topic.available ? 'check_circle' : 'schedule' }}</mat-icon>
+              {{ topic.available ? ('DASHBOARD.AVAILABLE' | translate) : ('DASHBOARD.AVAILABLE_SOON' | translate) }}
+            </mat-chip>
+            @if (group.category === 'Tools to buy') {
+              <mat-chip [class]="topic.subscriptionRequired ? 'chip-subscription-required' : 'chip-subscription-not-required'">
+                <mat-icon>{{ topic.subscriptionRequired ? 'lock' : 'lock_open' }}</mat-icon>
+                {{ topic.subscriptionRequired ? 'Subscription Required' : 'Subscription Not Required' }}
+              </mat-chip>
+              <mat-chip [class]="topic.supportplanavailable ? 'chip-support-available' : 'chip-support-not-available'">
+                <mat-icon>{{ topic.supportplanavailable ? 'support_agent' : 'do_not_disturb' }}</mat-icon>
+                {{ topic.supportplanavailable ? 'Non Mandatory Support Plan Available' : 'No Support Plan Available' }}
+              </mat-chip>
+            }
           </mat-card-subtitle>
         </mat-card-header>
 
@@ -95,7 +115,7 @@
         </mat-expansion-panel>
 
         <mat-card-actions>
-          <button mat-stroked-button color="primary" (click)="openDocument(topic)">
+          <button mat-stroked-button color="primary" (click)="openDocument(topic)" [disabled]="!topic.available">
             <mat-icon>{{ topic.documentType === 'pdf' ? 'picture_as_pdf' : 'article' }}</mat-icon>
             {{ 'DASHBOARD.OPEN_DOCUMENT' | translate }}
           </button>

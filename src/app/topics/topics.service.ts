@@ -58,6 +58,12 @@ export class TopicsService {
         }))
         .filter((a) => a.title.length > 0 && a.url.length > 0);
 
+      const rawPrice = t['price'];
+      const price = typeof rawPrice === 'number' && rawPrice >= 0 ? rawPrice : 0;
+      const available = t['available'] !== false;
+      const subscriptionRequired = t['subscriptionRequired'] === true;
+      const supportplanavailable = t['supportplanavailable'] === true;
+
       normalized.push({
         id,
         category,
@@ -67,6 +73,10 @@ export class TopicsService {
         ...(descriptionFr ? { descriptionFr } : {}),
         document,
         documentType,
+        price,
+        available,
+        subscriptionRequired,
+        supportplanavailable,
         articles,
       });
     }
