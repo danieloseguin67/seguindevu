@@ -125,8 +125,8 @@
   {
     "id": 8,
     "category": "Software and Tools",
-    "title": "MyAccounting Accounting Documentation Version",
-    "titleFr": "MyAccounting Logiciel de comptabilité Version",
+    "title": "MyAccounting Accounting Software",
+    "titleFr": "MyAccounting Logiciel de comptabilité",
     "description": "MyAccounting is a comprehensive accounting software designed to streamline financial management for businesses of all sizes. The beta version offers a range of features including invoicing, expense tracking, financial reporting, and integration with popular payment gateways. With an intuitive user interface and robust functionality, MyAccounting aims to simplify accounting processes and enhance financial visibility for users.",
     "descriptionFr": "MyAccounting est un logiciel de comptabilité complet conçu pour rationaliser la gestion financière des entreprises de toutes tailles. La version bêta offre une gamme de fonctionnalités, notamment la facturation, le suivi des dépenses, les rapports financiers et l'intégration avec",
     "document": "topics/MyAccounting_Marketing.pdf",
