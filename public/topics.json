@@ -345,5 +345,21 @@
     "supportplanavailable": false,
     "articles": [
     ]
+  },
+  {
+    "id": 18,
+    "category": "Documentation",
+    "title": "MyAccounting Implementation Guide",
+    "titleFr": "MyAccounting Guide de mise en œuvre",
+    "description": " Comprehensive implementation guide for MyAccounting, providing step-by-step instructions and best practices for deploying and configuring the software in a production environment. This guide covers installation, setup, customization, and troubleshooting to ensure a successful implementation of MyAccounting for businesses.",
+    "descriptionFr": "  Guide de mise en œuvre complet pour MyAccounting, fournissant des instructions étape par étape et des meilleures pratiques pour déployer et configurer le logiciel dans un environnement de production. Ce guide couvre l'installation, la configuration, la personnalisation et le dépannage pour assurer une mise en œuvre réussie de MyAccounting pour les entreprises.",
+    "document": "topics/MyAccountingImplementationGuide.pdf",
+    "documentType": "pdf",
+    "price": 0,
+    "available": true,
+    "subscriptionRequired": false,
+    "supportplanavailable": false,
+    "articles": [
+    ]
   }
 ]
