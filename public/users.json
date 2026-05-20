@@ -35,5 +35,13 @@
     "changepasswordnextlogin": false,
     "passwordHash": "$2b$10$dpAbTBMda/ZbJCnsiEdjjuQsj.pNimecwYSeVAPqyIHL27PyhbdkO",
     "passwordPlain": "Fre2611%01"
+  },
+  {
+    "username": "guybernier",
+    "userfullname": "Guy Bernier",
+    "email": "guy@gbconseil.com",
+    "changepasswordnextlogin": false,
+    "passwordHash": "$2b$10$aeYF9qPFW2b7abJ8iRnTK.EZn9OJ6f6fsR0stOdupZSUieRXUjh6e",
+    "passwordPlain": "Bienvenue$2026"
   }
 ]
